@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" 
+                src="bootstrap.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="bootstrap.css">
+    </head>
+    <body style="background-image: url('https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a7/Stripped_Crimson_Stem_%28texture%29_JE1_BE1.png/revision/latest/scale-to-width-down/250?cb=20201001141831'); height: 100%">
+        <!-- HTML Code -->
+        <br>
+        <div class="container" style="background-color: rgba(255, 255, 255, 0.5);" onmouseover="update()">
+            <br>
+            <center>
+            <p id="score_player_1" style="margin-left: 10px;">'s Score</p>
+            <p id="score_player_2" style="margin-left: 10px;">'s Score</p>
+            
+            <br>
+            <br>
+            <div class="container" id="guess_div" style="display: none; background-color: rgb(255, 255, 255);">
+                <h5 id="numbertext">What's __ _ __?</h5>
+                <br>
+                <input type="number" id="answer" class="form-control">
+                <br>
+                <button class="btn btn-danger" id="guess" onclick="guess()">Check</button>
+                <br>
+            </div>
+            <br>
+            <div class="container">
+                <input type="number" id="number1" class="form-control" placeholder="First #">
+                <br>
+                <input type="number" id="number2" class="form-control" placeholder="Next #">
+                <br>
+                <select id="operation">
+                    <option value="Addition">Addition +</option>
+                    <option value="Subtraction">Subtratcion -</option>
+                    <option value="Multiplication">Multiplication *</option>
+                    <option value="Division">Division /</option>
+                </select>
+                <br>
+                <br>
+                <button class="btn btn-danger" id="submit" onclick="submitFN()">Submit</button>
+                    
+                <br>
+                <br>
+            </center>
+            </div>
+        </div>
+
+        <!--Bootstrap and User JS-->
+        
+        <script type="text/javascript" 
+                src="game.js"></script>
+    </body>
+</html>
